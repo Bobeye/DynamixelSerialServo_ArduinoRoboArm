@@ -2,7 +2,7 @@
 
 # Datatypes (KEYWORD1)
 
-DynamixelSerial        	KEYWORD1
+DynamixelSerial1       	KEYWORD1
 Dynamixel        	KEYWORD1
 Ax12            	KEYWORD1
 
