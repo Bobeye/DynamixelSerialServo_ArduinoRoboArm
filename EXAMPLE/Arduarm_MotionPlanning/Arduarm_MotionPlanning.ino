@@ -58,7 +58,8 @@ void loop(){
   distance = sqrt((x^2)+(y^2)+(z^2));
   float alpha = atan(y/x);
   float belta = (acos(((linkB^2)+(distance^2)-(linkC^2)) / (2 * linkB * distance))) + asin(z/distance);
-  float gama = 
+  float gama = asin(distance * sin(belta) / linkC);
+  
   
   
   //range check
