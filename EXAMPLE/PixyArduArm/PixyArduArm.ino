@@ -23,7 +23,21 @@ void loop(){
   
   blocks = pixy.getBlocks();
   if(blocks) {
-  Serial.println("blocks!!!!!!!!");
+    Serial.println("no blocks!!!!!!!!");
+    Dynamixel.moveSpeed(1,200,jointSpeed1);
+  //Dynamixel.move(3,random(200,800));  // Move the Servo radomly from 200 to 800
+
+  Dynamixel.moveSpeed(3,300,jointSpeed);
+
+  //Dynamixel.move(5,random(200,800));  // Move the Servo radomly from 200 to 800
+
+  Dynamixel.moveSpeed(5,400,jointSpeed);
+  Dynamixel.moveSpeed(7,500,jointSpeed);
+
+  delay(1000);
+  }
+  else {
+    Serial.println("blocks!!!!!!!!");
   //Dynamixel.move(1,random(200,800));  // Move the Servo radomly from 200 to 800
   Dynamixel.moveSpeed(1,random(200,1000),jointSpeed1);
   //Dynamixel.move(3,random(200,800));  // Move the Servo radomly from 200 to 800
@@ -33,20 +47,14 @@ void loop(){
   //Dynamixel.move(5,random(200,800));  // Move the Servo radomly from 200 to 800
 
   Dynamixel.moveSpeed(5,random(200,800),jointSpeed);
-  delay(2000);
-  }
-  else {
-    Dynamixel.moveSpeed(1,200,jointSpeed1);
-  //Dynamixel.move(3,random(200,800));  // Move the Servo radomly from 200 to 800
-
-  Dynamixel.moveSpeed(3,300,jointSpeed);
-
-  //Dynamixel.move(5,random(200,800));  // Move the Servo radomly from 200 to 800
-
-  Dynamixel.moveSpeed(5,400,jointSpeed);
+  Dynamixel.moveSpeed(7,random(200,800),jointSpeed);
+  delay(200);
+    
+    
+   
   }
   
  
-delay(1000);
+delay(100);
 
 }
